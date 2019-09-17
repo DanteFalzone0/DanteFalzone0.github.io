@@ -7,6 +7,7 @@ body {
 }
 
 p.title_bar {
+    font-family: Sans-Serif;
     font-size: 255%; /* why can't you have hexadecimal literals in CSS smh */
     line-height: 0em; /* CSS is fscking weird */
 }
