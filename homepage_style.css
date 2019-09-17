@@ -1,13 +1,14 @@
 body {
     margin:50;
     padding:50;
+    font-color: #FFFFFF;
     font-family: Sans-Serif;
     line-height: 1.5em;
-    background-color: #FFEECC;
+    background-color: #111111;
 }
 
 p.title_bar {
     font-family: Sans-Serif;
-    font-size: 255%; /* why can't you have hexadecimal literals in CSS smh */
+    font-size: 255%;
     line-height: 0em; /* CSS is fscking weird */
 }
