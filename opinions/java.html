@@ -17,10 +17,10 @@
         </div>
         
         <p>
-            A <a href="https://github.com/pdush">friend of mine</a> recently undertook to learn programming. For their first programming language they chose Python,
-            which I think is an excellent first language; it is a powerful, expressive, and useful language that is very easy
-            for beginners to learn. I may be a little biased by the fact that Python was <em>my</em> first language, but I think
-            those familiar with Python would agree.
+            A <a href="https://github.com/pdush">friend of mine</a> recently undertook to learn programming. For their first
+            programming language they chose Python, which I think is an excellent first language; it is a powerful, expressive,
+            and useful language that is very easy for beginners to learn. I may be a little biased by the fact that Python was
+            <em>my</em> first language, but I think those familiar with Python would agree.
         </p>
         
         <p>
@@ -38,6 +38,7 @@
             Consider the following Java code:
         </p><p> 
             <code>
+                <!-- The one true indentation style lmao -->
                 public class HelloWorld {<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[]) {<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, world!");<br>
@@ -46,11 +47,47 @@
             </code>
         </p><p>
             The idea behind Java is to provide strong support for object-oriented programming, no? And whatever identifier
-            comes right after the word `class` is the type of whatever those objects are, right?
+            comes right after the word <code>class</code> is the type of whatever those objects are, right?
         </p><p>
             Then what, pray tell, is a "HelloWorld"? An object is supposed to be a <em>thing</em>, like an apple or
             a rock or (far too often) a factory or abstract idea. But a "HelloWorld" isn't a thing. Calling this class
-            a "HelloWorld" makes no sense.
+            a "HelloWorld" makes no sense. It goes against the idea of object-oriented programming. It's much more like
+            program name declarations in Fortran or Cobol.
+        </p><p>
+            Java has no naked functions. Every function has to be a "method", which has to be inside of a class. The result of
+            this is that the programmer who learns Java as their first language gets used to the
+            <code>subject.verb(object);</code> pattern, which limits their thinking. Programming languages can be much more
+            expressive than that! Imagine trying to make sense of C's <code>qsort()</code>, or literally anything in a ML
+            language, when you've been accustomed to nothing but the <code>subject.verb(object)</code> pattern.
+        </p>
+        
+        <p>
+            <strong>The stuff in java.lang is clunky and dumb</strong>
+        </p>
+        
+        <p>
+            Java has primitive <code>int</code>s, and it also has an <code>Integer</code> class. I know the historical reasons
+            for this design decision (performance concerns), but the newbie programmer does not. For what logical, sensible reason
+            should a language have both of those things? Why shouldn't you be able to treat an <code>int</code> like any other
+            object?
+        </p>
+        <p>
+            Compare the following:
+            <code>
+                print("foo")<br>
+                printf("foo\n");<br>
+                println!("foo");<br>
+                std::cout << "foo\n";<br>
+                System.out.println("foo");<br>
+            </code>
+            Now I for one happen to think that the way a language handles standard I/O is a very important feature of the
+            language. I also happen to think that newbies should not use autocompletion, so that they can learn how to
+            look up documentation for library code. <code>System.out.println();</code> is so verbose that when I find myself
+            in the unfortunate position of needing to write in Java, I often write a <code>static void print()</code> to
+            wrap it. This problem could've been fixed if Java supported naked functions.
+        </p>
+        <p>
+            I have more opinions about Java but I'm not writing them today.
         </p>
 
     </body>
