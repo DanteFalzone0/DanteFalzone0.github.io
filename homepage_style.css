@@ -14,3 +14,13 @@ p.title_bar {
     font-size: 255%;
     line-height: 0em; /* CSS is fscking weird */
 }
+
+table {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+table td {
+    border: 1px solid white;
+    padding: 10px 20px;
+}
