@@ -1,5 +1,15 @@
 /* Written by Dante James Falzone */
 
+/* stackoverflow.com/a/48030340/ */
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 body {
     margin:50;
     padding:50;
@@ -12,7 +22,7 @@ body {
 p.title_bar {
     font-family: Sans-Serif;
     font-size: 255%;
-    line-height: 0em; /* CSS is fscking weird */
+    line-height: 0em;
 }
 
 table {
