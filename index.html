@@ -20,28 +20,34 @@
         <div class="center-screen">
             <img src="smile.jpg">
 
-            <p>
-                Hi! My name is Dante Falzone. I'm a developer at Elkhorn Computer Service in
-                Elkhorn, NE. For my job I write, maintain, and deploy serverless microservices
-                on AWS Lambda in Python. For my personal side projects I like to use C, C++,
-                and Rust; I find low-level programming a lot of fun.
-            <br/> <br/>
-                My work email address can be obtained by running the following program:<br/>
-                <div class="code-snippet">
-                    // Let's see the spambots harvest this one lol<br/>
-                    #include &lt;stdio.h&gt;<br/>
-                    <br/>
-                    int main(int argc, char *argv[]) {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;const char *email_caesar_3 = "GdqwhChonkruqvhuylfh1frp";<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;int i = 0;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;while (*(email_caesar_3 + i)) {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putchar(*(email_caesar_3 + i++) - 3);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;putchar('\n');<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>
-                    }<br/>
-                </div>
-            </p>
+            <div>
+                <br/>
+                    Hi! My name is Dante Falzone. I'm a developer at Elkhorn Computer Service in
+                    Elkhorn, NE. For my job I write, maintain, and deploy serverless microservices
+                    on AWS Lambda in Python. For my personal side projects I like to use C, C++,
+                    and Rust; I find low-level programming a lot of fun.
+                <br/> <br/>
+                    My work email address can be obtained by running the following program:<br/>
+
+                    <!-- Code snippets have to be unindented because the `.code-snippet` selector
+                         in the CSS has the value  `pre`  for  the `white-space` property.  I did
+                         this so that  I  wouldn't have to type a bunch of  `&nbsp;`  to properly
+                         indent code snippets. -->
+
+                    <div class="code-snippet"
+>// Let's see the spambots harvest this one lol
+#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[]) {
+    const char *email_caesar_3 = "GdqwhChonkruqvhuylfh1frp";
+    int i = 0;
+    while (*(email_caesar_3 + i)) {
+        putchar(*(email_caesar_3 + i++) - 3);
+    }
+    putchar('\n');
+    return 0;
+}</div>
+            </div>
         </div>
 
     </body>
