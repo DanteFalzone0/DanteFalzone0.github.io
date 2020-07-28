@@ -6,9 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
 }
 
 body {
@@ -16,13 +16,20 @@ body {
     padding:50;
     color: #FFFFFF;
     font-family: Sans-Serif;
+    font-size: 120%;
     line-height: 1.5em;
     background-color: #222222;
 }
 
+.code-snippet {
+    color: #00FF55;
+    background-color: #050505;
+    font-family: "Fira Code", "Consolas", monospace;
+}
+
 p.title_bar {
     font-family: Sans-Serif;
-    font-size: 255%;
+    font-size: 200%;
     line-height: 0em;
 }
 

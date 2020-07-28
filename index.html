@@ -25,6 +25,22 @@
                 Elkhorn, NE. For my job I write, maintain, and deploy serverless microservices
                 on AWS Lambda in Python. For my personal side projects I like to use C, C++,
                 and Rust; I find low-level programming a lot of fun.
+            <br/> <br/>
+                My work email address can be obtained by running the following program:<br/>
+                <div class="code-snippet">
+                    // Let's see the spambots harvest this one lol<br/>
+                    #include &lt;stdio.h&gt;<br/>
+                    <br/>
+                    int main(int argc, char *argv[]) {<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;const char *email_caesar_3 = "GdqwhChonkruqvhuylfh1frp";<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int i;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;while (*(email_caesar_3 + i)) {<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;putchar(*(email_caesar_3 + i++) - 3);<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;putchar('\n');<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>
+                    }<br/>
+                </div>
             </p>
         </div>
 
